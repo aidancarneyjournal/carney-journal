@@ -1,6 +1,6 @@
 module.exports = {
   title: "Carney Journal",
-  tagline: "An independent journal of writing, research, and working papers",
+  tagline: "Articles, statistics, research, and more.",
   url: "https://carneyjournal.com",
   author: "Carney",
   // Update this once you set up a donation link (Ko-fi, Buy Me a Coffee, PayPal, etc.)
