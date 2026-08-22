@@ -1,14 +1,14 @@
 ---
 layout: base.njk
 title: Articles
-description: "The full archive of articles, analyses, and working papers published on Carney Journal."
+description: ""
 permalink: /articles/
 ---
 {% from "article-card.njk" import card %}
 <section class="wrap page-head">
   <p class="page-head__eyebrow">Archive</p>
-  <h1>All articles</h1>
-  <p class="page-head__lede">Everything published so far, newest first.</p>
+  <h1>Articles</h1>
+  <p class="page-head__lede">You can find all of my work right below.</p>
 </section>
 
 <section class="wrap section">
@@ -16,7 +16,7 @@ permalink: /articles/
     {% for article in collections.articles %}
       {{ card(article) }}
     {% else %}
-      <p class="empty">Nothing published yet — check back soon.</p>
+      <p class="empty">This is niche. I haven't posted anything or I deleted it all.</p>
     {% endfor %}
   </div>
 </section>
