@@ -1,0 +1,40 @@
+---
+layout: base.njk
+title: null
+description: "A personal journal of articles, statistical analyses, and projects — starting with a rating system for college football players."
+---
+{% from "article-card.njk" import card %}
+<section class="wrap hero">
+  <p class="hero__eyebrow">Vol. 1, in progress</p>
+  <h1 class="hero__title">Writing, statistics, and projects — worked on in the open.</h1>
+  <p class="hero__lede">
+    Carney Journal is a personal publication where I post original articles, statistical
+    analyses, and side projects as I work on them. Most pieces start as rough working
+    papers and get revised over time. Sports analytics is the current focus, but the
+    scope will widen as new interests show up.
+  </p>
+</section>
+
+<section class="wrap section">
+  <div class="section__head">
+    <h2>Latest</h2>
+    <a href="/articles/">All articles &rarr;</a>
+  </div>
+  <div class="card-grid">
+    {% for article in collections.articles | limit(6) %}
+      {{ card(article) }}
+    {% else %}
+      <p class="empty">No articles published yet — the first one is on its way.</p>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="wrap section section--about">
+  <h2>About this journal</h2>
+  <p>
+    I'm a first-year college student, and this site is where I publish work as I make it —
+    including the early, unpolished stuff. Pieces are labeled as <strong>working papers</strong>,
+    <strong>drafts</strong>, or <strong>finished</strong> so it's clear how far along something is.
+    Read more on the <a href="/about/">About page</a>.
+  </p>
+</section>

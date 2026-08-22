@@ -1,0 +1,25 @@
+---
+layout: base.njk
+---
+<article class="wrap article">
+  <div class="article__header">
+    {% if status %}<div class="stamp stamp--{{ status | lower | replace(' ', '-') }}">{{ status }}</div>{% endif %}
+    <h1 class="article__title">{{ title }}</h1>
+    {% if summary %}<p class="article__summary">{{ summary }}</p>{% endif %}
+    <dl class="meta-block">
+      <div><dt>Date</dt><dd><time datetime="{{ date | isoDate }}">{{ date | readableDate }}</time></dd></div>
+      {% if category %}<div><dt>Category</dt><dd>{{ category }}</dd></div>{% endif %}
+      <div><dt>Length</dt><dd>{{ content | readingTime }}</dd></div>
+      <div><dt>Author</dt><dd>{{ site.author }}</dd></div>
+    </dl>
+  </div>
+
+  <div class="article__body">
+    {{ content | safe }}
+  </div>
+
+  <div class="article__footer">
+    <p class="article__disclaimer">This is independent, self-published work — not peer-reviewed research. See the <a href="/about/">About page</a> for more on how this journal labels drafts, working papers, and finished pieces.</p>
+    <p><a href="/articles/">&larr; Back to all articles</a></p>
+  </div>
+</article>

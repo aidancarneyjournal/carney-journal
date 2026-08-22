@@ -1,0 +1,12 @@
+{% macro card(article) %}
+<a class="card" href="{{ article.url }}">
+  <div class="card__meta">
+    <time datetime="{{ article.date | isoDate }}">{{ article.date | readableDate }}</time>
+    {% if article.data.category %}<span class="card__category">{{ article.data.category }}</span>{% endif %}
+    {% if article.data.status %}<span class="stamp stamp--{{ article.data.status | lower | replace(' ', '-') }} stamp--sm">{{ article.data.status }}</span>{% endif %}
+  </div>
+  <h3 class="card__title">{{ article.data.title }}</h3>
+  {% if article.data.summary %}<p class="card__summary">{{ article.data.summary }}</p>{% endif %}
+  <span class="card__read">Read article &rarr;</span>
+</a>
+{% endmacro %}

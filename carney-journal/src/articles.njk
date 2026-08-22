@@ -1,0 +1,22 @@
+---
+layout: base.njk
+title: Articles
+description: "The full archive of articles, analyses, and working papers published on Carney Journal."
+permalink: /articles/
+---
+{% from "article-card.njk" import card %}
+<section class="wrap page-head">
+  <p class="page-head__eyebrow">Archive</p>
+  <h1>All articles</h1>
+  <p class="page-head__lede">Everything published so far, newest first.</p>
+</section>
+
+<section class="wrap section">
+  <div class="card-grid">
+    {% for article in collections.articles %}
+      {{ card(article) }}
+    {% else %}
+      <p class="empty">Nothing published yet — check back soon.</p>
+    {% endfor %}
+  </div>
+</section>
