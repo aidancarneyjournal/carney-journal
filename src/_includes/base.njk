@@ -16,14 +16,15 @@
 
   <header class="masthead">
     <div class="wrap masthead__inner">
-      <a class="masthead__title" href="/">{{ site.title }}</a>
-      <p class="masthead__tagline">{{ site.tagline }}</p>
+      <a class="masthead__logo" href="/">
+        <img src="/images/logo.png" alt="{{ site.title }}">
+      </a>
       <nav class="masthead__nav" aria-label="Primary">
         <ul>
           {% for item in site.nav %}
           <li><a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a></li>
           {% endfor %}
-          <li><a class="nav__donate" href="/donate/">Donate</a></li>
+          <li><a class="nav__donate" href="/donate/">Support</a></li>
         </ul>
       </nav>
     </div>
