@@ -6,7 +6,7 @@
 :root {
   --paper: #F5F5F5;
   --paper-raised: #FFFFFF;
-  --ink: #1F2421;
+  --ink: #0f0f0f;
   --navy: #1D3557;
   --navy-dim: #35507a;
   --amber: #C98A2C;
@@ -14,7 +14,7 @@
   --muted: #6B6559;
 
   --font-display: "Fraunces", Georgia, serif;
-  --font-body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Lexend", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "SF Mono", Consolas, monospace;
 
   --measure: 680px;
