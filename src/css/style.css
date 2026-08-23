@@ -72,6 +72,12 @@ a:hover { color: var(--amber); }
   padding-top: 0.9rem;
   padding-bottom: 0.9rem;
 }
+.masthead__inner {
+  max-width: none;
+  margin: 0;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .masthead__logo img {
   display: block;
   height: 40px;
