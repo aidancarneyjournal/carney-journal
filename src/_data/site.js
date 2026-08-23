@@ -7,7 +7,6 @@ module.exports = {
   donateUrl: "https://ko-fi.com/",
   contactEmail: "hello@carneyjournal.com",
   nav: [
-    { text: "Home", url: "/" },
     { text: "Articles", url: "/articles/" },
     { text: "About", url: "/about/" },
     { text: "Contact", url: "/contact/" },
