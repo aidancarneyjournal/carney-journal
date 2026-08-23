@@ -107,14 +107,6 @@ a:hover { color: var(--amber); }
 
 /* -----------------------------  Hero (home)  --------------------------- */
 .hero { padding: 3.5rem 1.5rem 1rem; text-align: left; }
-.hero__eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--amber);
-  margin: 0 0 0.75rem;
-}
 .hero__title {
   font-family: var(--font-display);
   font-size: clamp(1.9rem, 4vw, 3rem);
@@ -144,14 +136,6 @@ a:hover { color: var(--amber); }
 .section--about { max-width: var(--measure); }
 
 .page-head { padding: 3rem 1.5rem 1rem; }
-.page-head__eyebrow {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--amber);
-  margin: 0 0 0.5rem;
-}
 .page-head h1 { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.5rem); margin: 0 0 0.5rem; }
 .page-head__lede { color: var(--muted); }
 
